@@ -23,6 +23,15 @@
       font-family: "Sora", serif;
 
     }
+
+    @media screen and (max-width:576px) {
+      .child-9 {
+        display: none;
+
+      }
+
+
+    }
   </style>
 
   <script>
@@ -66,8 +75,8 @@
         </div>
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11
+            -mt-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
@@ -155,15 +164,15 @@
 
       <!-- Popular Products section -->
       <section class=" my-10 w-full bg-sec_color ">
-        <div class=" w-10/12  mx-auto md:my-28 py-8 md:py-20">
-          <h2 class="-ml-20 font-semibold text-2xl md:text-4xl text-main_color sm:mb-7">Popular Products
+        <div class=" md:w-10/12  mx-auto md:my-28 py-8 md:py-20 p-4">
+          <h2 class="md:-ml-20 font-semibold text-2xl md:text-4xl text-main_color sm:mb-7 mb-3">Popular Products
           </h2>
           <!-- parent  -->
-          <div class="sm:flex gap-5 p-4">
+          <div class="sm:flex gap-5 md:p-4">
             <!-- child 1 -->
             <div style="background:linear-gradient(rgba(83, 219, 58, 1), rgba(255, 255, 255, 1));
                       "
-              class=" md:h-96  bg-no-repeat  bg-center  self-center p-4 md:bg-right-top rounded-xl md:w-[40%] mb-5 md:mb-0">
+              class=" md:h-96  bg-no-repeat  bg-center  self-center md:p-4 md:bg-right-top rounded-xl md:w-[40%] mb-5 md:mb-0">
               <div class="space-y-3 p-4">
                 <h2 class="font-semibold text-2xl md:text-4xl text-white">30% off</h2>
                 <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
@@ -375,7 +384,7 @@
 
               </div>
               <!-- item 9-->
-              <div class="flex justify-evenly  bg-white rounded-xl">
+              <div class="child_9 md:flex justify-evenly  bg-white rounded-xl  hidden sm:block">
                 <div class="p-3 rounded-xl self-center">
                   <div class="bg-sec_color rounded-xl">
                     <img src="./c2-assets/onion.png" alt="">
@@ -412,14 +421,14 @@
     </section>
 
     <!-- Arrival & Offers -->
-    <section class="my-10 md:my-28">
-      <div class="w-11/12 mx-auto">
-        <h2 class="font-semibold text-2xl md:text-4xl text-main_color mb-2 sm:mb-10">Arrival & Offers</h2>
-        <div class="w-10/12 mx-auto">
+    <section class="my-10 md:my-28 md:mb-96 mb-72">
+      <div class="md:w-11/12 mx-auto p-4">
+        <h2 class="font-semibold text-2xl md:text-4xl text-main_color mb-4 sm:mb-10">Arrival & Offers</h2>
+        <div class="md:w-10/12 mx-auto">
           <!-- parent -->
-          <div class="md:flex justify-between gap-8">
+          <div class="md:flex justify-between gap-8 ">
             <!-- child 1 -->
-            <div class="bg-[#115414] rounded-xl p-5 md:w-[55%]">
+            <div class="bg-[#115414] rounded-xl p-5 md:w-[55%] mb-4">
               <!-- parent 1 -->
               <div class="flex justify-around ">
                 <!-- child 1.2 -->
@@ -457,7 +466,61 @@
       </div>
     </section>
 
+
+
     </main>
+
+    <footer class="bg-[#179800] py-20 relative ">
+      <!-- Get Grocery News! -->
+      <section class="my-10 md:my-28 absolute  md:-top-96 -top-80 md:left-56 left-0 p-4">
+        <div class="md:w-[1432px] mx-auto bg-[#EFEBE3] p-8 rounded-lg">
+          <!-- parent -->
+          <div class="md:flex justify-around">
+            <!-- img -->
+            <div ">
+              <img src=" ./c2-assets/vegetable-busket.png" alt="">
+            </div>
+            <!-- text -->
+            <div class="self-center space-y-4 text-center md:text-left">
+              <h2 class="font-semibold text-3xl text-[#111111]">Get Grocery News!</h2>
+              <p class="text-xl text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
+              <input class="py-3" type="email" name="" id="" placeholder="    Enter Email"> <br>
+              <button class="btn bg-main_color text-white">Subscribe</button>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <div class="w-10/12 mx-auto mt-32">
+        <div class="grid sm:grid-cols-3 items-center justify-center mt-64 md:mt-0 space-y-5">
+          <div class="md:justify-self-center ">
+            <img src="./c2-assets/logo-footer.png" alt="">
+            <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+          </div>
+          <div class="md:justify-self-center ">
+            <ul>
+              <li><a href="">Product </a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="md:justify-self-center ">
+            <h3 class="mb-4">Follow Us</h3>
+            <div class="flex gap-4">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
 
 </body>
 
