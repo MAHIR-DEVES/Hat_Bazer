@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fav -->
+  <link rel="shortcut icon" href="./c2-assets/healthy.png" type="image/x-icon">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/682586dc74.js" crossorigin="anonymous"></script>
+  <!-- daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <title>Hat Bazer </title>
+
+  <style>
+    .sorafont {
+      font-family: "Sora", serif;
+
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            main_color: '#179800',
+            sec_color: '#EFEBE3',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="sorafont">
+  <header class=" mt-3 bg-gradient-to-b from-[#FFFFFF] to-green-300 md:h-[88vh] w-full">
+    <div class="w-11/12  mx-auto ">
+      <div class="navbar ">
+        <div class="navbar-start space-x-5">
+
+          <img src="./c2-assets/logo-header.png" alt="">
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  ">
+          <div class="md:flex items-center gap-4 ">
+
+            <i class="fa-solid fa-magnifying-glass hidden lg:block cursor-pointer"></i>
+            <i class="fa-solid fa-cart-shopping hidden lg:block cursor-pointer"></i>
+            <button class="btn hidden  border-green-600 lg:block">Login</button>
+            <button class="btn bg-main_color hidden lg:block text-white">Register </button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- banner -->
+      <section class="11/12 mx-auto  ">
+        <div class=" text-center space-y-4 md:my-[5vh] md:hidden block mt-4">
+          <h1 class=" text-2xl sm:text-5xl font-semibold">
+            Freshness <span class="text-main_color">You Can</span><br>
+            <span class="text-main_color">Count</span> On, Prices You’ll Love!
+          </h1>
+          <p ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+                      staples, we’ve got you
+                      covered every day!</p>
+                  </div>
+        <div style=" background-image: url('./c2-assets/hero-vegetables.png'); ;"
+            class="h-96 bg-cover md:bg-contain md:h-[75vh] md:w-8/12 mx-auto  bg-no-repeat bg-center ">
+          <div class=" text-center space-y-4 md:my-[5vh] hidden md:block">
+            <h1 class=" text-2xl sm:text-5xl font-semibold">
+              Freshness <span class="text-main_color">You Can</span><br>
+              <span class="text-main_color">Count</span> On, Prices You’ll Love!
+            </h1>
+            <p ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+              staples, we’ve got you
+              covered every day!</p>
+          </div>
+
+        </div>
+
+
+      </section>
+
+  </header>
+
+  <main>
+    <!-- Services section-->
+    <section class=" w-11/12 mx-auto my-10 md:my-28">
+            <h2 class="font-semibold text-2xl md:text-4xl text-main_color mb-2 sm:mb-10">Services</h2>
+            <div class="sm:flex sm:justify-around space-y-8 sm:space-y-0">
+              <!-- card 1 -->
+              <div class="card bg-sec_color md:w-96 shadow-xl py-9 ">
+                <div class="avatar mx-auto pt-4">
+                  <div class="w-24 rounded-full bg-white p-4">
+                    <img src="./c2-assets/service.png" />
+                  </div>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">24/7 Services</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="card bg-sec_color md:w-96 shadow-xl py-9 ">
+                <div class="avatar mx-auto pt-4">
+                  <div class="w-24 rounded-full bg-white p-4">
+                    <img src="./c2-assets/delivery.png" />
+                  </div>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">24/7 Services</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="card bg-sec_color md:w-96 shadow-xl py-9 ">
+                <div class="avatar mx-auto pt-4">
+                  <div class="w-24 rounded-full bg-white p-4">
+                    <img src="./c2-assets/healthy.png" />
+                  </div>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">24/7 Services</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+
+                </div>
+              </div>
+            </div>
+
+      </section>
+
+      <!-- Popular Products section -->
+      <section class=" my-10 w-full bg-sec_color ">
+        <div class=" w-10/12  mx-auto md:my-28 py-8 md:py-20">
+          <h2 class="-ml-20 font-semibold text-2xl md:text-4xl text-main_color sm:mb-7">Popular Products
+          </h2>
+          <!-- parent  -->
+          <div class="sm:flex gap-5 p-4">
+            <!-- child 1 -->
+            <div style="background:linear-gradient(rgba(83, 219, 58, 1), rgba(255, 255, 255, 1));
+                      "
+              class=" md:h-96  bg-no-repeat  bg-center  self-center p-4 md:bg-right-top rounded-xl md:w-[40%] mb-5 md:mb-0">
+              <div class="space-y-3 p-4">
+                <h2 class="font-semibold text-2xl md:text-4xl text-white">30% off</h2>
+                <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
+                <button class="btn">Buy Now</button>
+              </div>
+              <div class="flex justify-end -mt-[78px]">
+                <img src="./c2-assets/vegetable-offer.png" alt="">
+              </div>
+
+
+            </div>
+
+            <!-- child 2 -->
+            <div class="sm: grid grid-cols-2 sm:grid-cols-3 gap-5  mx-auto md:w-[60%]">
+
+              <!-- item 1-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item 2-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item 3-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- child 4 -->
+
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item 5-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+
+              <!-- item 6 -->
+
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item 7-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item 8-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item 9-->
+              <div class="flex justify-evenly  bg-white rounded-xl">
+                <div class="p-3 rounded-xl self-center">
+                  <div class="bg-sec_color rounded-xl">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                </div>
+
+                <div class="rating flex flex-col self-center">
+                  <div class="flex ">
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <div>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Onion 1 KG</h2>
+                  <p>$39.99</p>
+                </div>
+
+              </div>
+              <!-- item end -->
+
+            </div>
+
+
+          </div>
+        </div>
+
+    </div>
+
+
+    </section>
+
+    <!-- Arrival & Offers -->
+    <section class="my-10 md:my-28">
+      <div class="w-11/12 mx-auto">
+        <h2 class="font-semibold text-2xl md:text-4xl text-main_color mb-2 sm:mb-10">Arrival & Offers</h2>
+        <div class="w-10/12 mx-auto">
+          <!-- parent -->
+          <div class="md:flex justify-between gap-8">
+            <!-- child 1 -->
+            <div class="bg-[#115414] rounded-xl p-5 md:w-[55%]">
+              <!-- parent 1 -->
+              <div class="flex justify-around ">
+                <!-- child 1.2 -->
+                <div class="self-center space-y-3 flex flex-col items-center ">
+                  <img src="./c2-assets/dawat-logo.png" alt="">
+                  <button class="btn border-none bg-[#63B76D] text-white ">Cook Exotic Dishes</button>
+                  <h2 class="text-white text-2xl"> <span class="font-normal">UP to</span> <span class="font-bold">20%
+                      OFF</span> </h2>
+                </div>
+                <!-- child 1.2 -->
+                <div>
+                  <img src="./c2-assets/dawat-mock-up.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- child 2 -->
+            <div class=" bg-[#102861] md:w-[45%] rounded-xl  p-5 flex justify-around">
+              <!-- child 2.1 -->
+              <div class=" space-y-2 flex flex-col items-center self-center ">
+                <img src="./c2-assets/india-gate-logo.png" alt="">
+                <button class="btn bg-[#2A4D97] border-none text-white">World’s No.1 Rice</button>
+                <h2 class="text-white text-2xl"> <span class="font-normal">UP to</span> <span class="font-bold">40%
+                    OFF</span> </h2>
+
+              </div>
+              <!-- child 2.2 -->
+              <div class="self-center">
+                <img src="./c2-assets/india-gate-mock-up.png" alt="">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+</body>
+
+</html>
